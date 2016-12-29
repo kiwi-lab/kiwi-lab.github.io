@@ -1,0 +1,18 @@
+.footer{
+	background: #100508;
+	padding: 30px 0;
+	.footer__button{
+		display: inline-block;
+		width: 412px;
+		height: 51px;
+		line-height: 51px;
+		font-weight: 700;
+		font-size: 30px;
+		color: #fff;
+		text-decoration: none!important;
+		background: #a5c03d;
+		&:hover{
+			background: darken(#a5c03d,5%);
+		}
+	}
+}
