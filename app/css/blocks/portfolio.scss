@@ -1,0 +1,143 @@
+.portfolio{
+	background: url('../img/portfolio.png') no-repeat top center;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	margin-top: -20px;
+	.portfolio__title{
+		font-size: 100px;
+		font-weight: 700;
+		margin-bottom: 80px;
+		display: inline-block;
+		color: #fff;
+		position: relative;
+		&:after{
+			display: block;
+			content: '';
+			width: 165px;
+			height: 96px;
+			position: absolute;
+			left: -40px;
+			bottom: -45px;
+			background: url('../img/about__bottom.png') no-repeat center;
+		}
+		span{
+			position: relative;
+			&:before{
+				display: block;
+				content: '';
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 8px auto 0;
+				top: 50%;
+				transform: translateY(-50%);
+				border-radius: 25px;
+				background:#ebba22;
+			}
+			line-height: 1;
+			display: inline-block;
+			&:nth-child(2){
+				&:before{
+					background: #a6c13d;
+				}
+			}
+		}
+	}
+	.porfilio__slider{
+		position: relative;
+		.slider__items{
+
+			.slider__item{
+				.item__img{
+					margin-bottom: 45px;
+					img{
+						max-width: 100%;
+						height: auto;
+					}
+				}
+				.item__review{
+						max-width: 1020px;
+						margin: 0 auto;
+					.review__top{
+						margin-bottom: 16px;
+						display: flex;
+						align-items: center;
+						.top__info{
+							padding-left: 30px;
+							color: #fff;
+							.info__name{
+								font-size: 48px;
+								line-height: 1;
+								margin-bottom: 7px;
+							}
+							.info__prof{
+								font-size: 30px;
+								line-height: 1;
+								span{
+									padding-right: 30px;
+								}
+							}
+						}
+					}
+
+					.review__content{
+						color: #fff;
+						font-size: 30px;
+						line-height: 1.2;
+					}
+				}
+			}	
+		}
+
+		.slider__nav{
+			position: absolute;
+			top: 380px;
+			left: -95px;
+			right: 0;
+			margin: 0 auto;
+			width: 275px;
+			display: flex;
+			justify-content: space-between;
+
+			.nav__button{
+				$size: 51px;
+				cursor: pointer;
+				width: $size;
+				height: $size;
+				border-radius: $size;
+				position: relative;
+
+				background: #979797;
+				&:hover{
+					background: #ebba22;
+				}
+				&:before{
+					display: block;
+					content: '';
+					width: 20px;
+					height: 33px;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					right: 0;
+					transform: translateY(-50%);
+					margin: 0 auto;
+				}
+				&-right{
+					&:before{
+						right: -4px;
+						background: url('../img/slider-right.png') no-repeat center;
+					}
+				}
+				&-left{
+					&:before{
+						left: -4px;
+						background: url('../img/slider-left.png') no-repeat center;
+					}
+				}
+			}
+		}
+	}
+}

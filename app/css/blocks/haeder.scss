@@ -1,0 +1,41 @@
+.header{
+	background: url('../img/header.jpg') no-repeat top center;
+	background-size: cover;
+	padding-top: 90px;
+	.container{
+		@media screen and (min-width: 1200px) {
+			width: 100%;
+			max-width: 1300px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+			user-select: none;
+		}
+		.header-logo{
+			position: relative;
+			padding-top: 320px;
+			padding-bottom: 360px;
+			.logo__arrow{
+				user-select: none;
+				position: absolute;
+				&-right{
+					top: 90px;
+					width: 652px;
+					height: 364px;
+					background: url('../img/right-arrow.png') no-repeat top center;
+					background-size: 100%;
+					right: -25px;
+				}
+				&-left{
+					bottom: 135px;
+					width: 644px;
+					height: 376px;
+					background: url('../img/left-arrow.png') no-repeat top center;
+					background-size: 100%;
+					left: -40px;					
+				}
+			}
+		}
+	}
+}
