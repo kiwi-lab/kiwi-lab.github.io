@@ -32,3 +32,30 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
 }
 
+
+.feedback{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	color: #fff;
+	display: block;
+	font-size: 48px;
+	font-weight: 700;
+	top: 540px;
+	right: -150px;
+	z-index: 5;
+	background: #ebba22;
+	text-align: center;
+	line-height: 100px;
+
+	transform: rotate(-90deg);
+
+	&:hover,
+	&:active,
+	&:focus{
+		text-decoration: none;
+		color: #fff;
+		background: darken(#ebba22,5%);
+	}
+}
+

@@ -1,0 +1,39 @@
+.about__page{
+	background: #000 url('../img/about__page.png')  no-repeat center top;
+	background-size: cover;
+	padding-top: 180px;
+	padding-bottom: 60px;
+	.about__title{
+		line-height: 1;
+		margin-bottom: 45px;
+		color: #fff;
+		font-size: 48px;
+	}
+	.img{
+		max-width: 100%;
+		height: auto;
+	}
+	.about__content{
+		max-width: 1050px;
+		margin: 0 auto;
+		.content__p{
+			margin-bottom: 60px;
+		}
+		p{
+			color: #fff;
+			font-size: 30px;
+			line-height: 1.2;
+			text-align: justify;
+		}
+		.pull-right{
+			padding-left: 20px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		.pull-left{
+			padding-right: 20px;
+		}
+	}
+}
