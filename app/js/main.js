@@ -14,4 +14,8 @@ $(document).ready(function() {
 		}
 		owl.trigger('next.owl.carousel');
 	});
+
+	setTimeout(function(){
+		$('.logo__arrow').removeClass('shake-constant--hover shake-slow shake-constant')
+	},3000);
 });
