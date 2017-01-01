@@ -34,7 +34,7 @@ input:-webkit-autofill {
 
 
 .feedback{
-	position: absolute;
+	position: fixed;
 	width: 400px;
 	height: 100px;
 	color: #fff;
@@ -49,6 +49,16 @@ input:-webkit-autofill {
 	line-height: 100px;
 
 	transform: rotate(-90deg);
+
+	@media only screen and (max-width: 767px) {
+		height: 50px;
+		width: 200px;
+		font-size: 24px;
+		right: -75px;
+		line-height: 50px;
+		top: 50%;
+		margin-top: -10px;
+	}
 
 	&:hover,
 	&:active,
@@ -85,6 +95,10 @@ input:-webkit-autofill {
 	}
 	.modal-content{
 		padding: 0 50px;
+
+		@media only screen and (max-width: 767px) {
+			padding: 0 20px;
+		}
 		border-radius: 0;
 		.close{
 			// display: none;
@@ -118,7 +132,8 @@ input:-webkit-autofill {
 			.btn{
 				color: #fff;
 				font-size: 30px;
-				width: 306px;
+				width: 100%;
+				max-width: 306px;
 				height: 55px;
 				padding: 0;
 				line-height: 55px;
@@ -140,6 +155,10 @@ input:-webkit-autofill {
 			font-size: 48px;
 			color: #fff;
 			font-weight: 700;
+
+			@media only screen and (max-width: 767px) {
+				font-size: 32px;
+			}
 		}
 	}
 }

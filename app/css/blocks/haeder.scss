@@ -19,6 +19,9 @@
 			.logo__arrow{
 				user-select: none;
 				position: absolute;
+				@media screen and (max-width: 1120px) {
+					display: none;
+				}
 				&-right{
 					top: 90px;
 					width: 652px;

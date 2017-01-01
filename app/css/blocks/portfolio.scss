@@ -10,6 +10,10 @@
 		display: inline-block;
 		color: #fff;
 		position: relative;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 70px;
+		}
 		&:after{
 			display: block;
 			content: '';
@@ -19,6 +23,10 @@
 			left: -40px;
 			bottom: -45px;
 			background: url('../img/about__bottom.png') no-repeat center;
+			@media only screen and (max-width: 767px) {
+				display: none;
+			}
+
 		}
 		span{
 			position: relative;
@@ -35,6 +43,12 @@
 				transform: translateY(-50%);
 				border-radius: 25px;
 				background:#ebba22;
+
+				@media only screen and (max-width: 767px) {
+					width: 16px;
+					height: 16px;
+					margin-top: 6px;
+				}
 			}
 			line-height: 1;
 			display: inline-block;
@@ -64,8 +78,16 @@
 						margin-bottom: 16px;
 						display: flex;
 						align-items: center;
+
+						@media only screen and (max-width: 767px) {
+							display: block;
+							text-align: center;
+						}
 						.top__info{
 							padding-left: 30px;
+							@media only screen and (max-width: 767px) {
+								padding-left: 0;
+							}
 							color: #fff;
 							.info__name{
 								font-size: 48px;
@@ -101,6 +123,12 @@
 			z-index: 10;
 			display: flex;
 			justify-content: space-between;
+
+			@media only screen and (max-width: 767px) {
+				top: auto;
+				left: 0;
+				bottom: -80px;
+			}
 
 			.nav__button{
 				$size: 51px;

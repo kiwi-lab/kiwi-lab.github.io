@@ -9,6 +9,9 @@
 		font-weight: 700;
 		margin-bottom: 100px;
 		color: #fff;
+		@media only screen and (max-width: 767px) {
+			font-size: 70px;
+		}
 		span{
 			position: relative;
 			&:before{
@@ -24,12 +27,19 @@
 				transform: translateY(-50%);
 				border-radius: 25px;
 				background:#ebba22;
+				@media only screen and (max-width: 767px) {
+					width: 16px;
+					height: 16px;
+				}
 			}
 			line-height: 1;
 			display: inline-block;
 			&:last-child{
 				&:before{
 					margin: 9px auto 0;
+					@media only screen and (max-width: 767px) {
+						margin-top: 6px;
+					}
 				}
 			}
 			&:first-child{
@@ -42,6 +52,10 @@
 					left: -40px;
 					bottom: -45px;
 					background: url('../img/about__bottom.png') no-repeat center;
+					
+					@media only screen and (max-width: 767px) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -65,6 +79,11 @@
 		img{
 			max-width: 100%;
 			height: auto;
+			@media only screen and (max-width: 767px) {
+				float: none!important;
+				display: block;
+				margin: 0 auto 40px;
+			}
 		}
 		.pull-left{
 			padding-right: 20px;

@@ -3,6 +3,22 @@
 	border: 0;
 	min-height: 90px;
 	border-radius: 0;
+	.navbar-header{
+		height: 100px;
+		.navbar-toggle{
+			float: left;
+			border: 0;
+			margin-left: 25px;
+			margin-top: 28px;
+			.icon-bar{
+				width: 32px;
+				height: 4px;
+			}
+		}
+	}
+	// .navbar-collapse{
+		// max-height: auto;
+	// }
 	li{
 		font-size: 16px;
 		a{
@@ -21,6 +37,10 @@
 
 	.navbar-nav>li>a{
 		padding: 34px 20px;
+		@media screen and (max-width: 767px){
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 		// padding-top: 34px;
 		// padding-bottom: 34px;
 	}

@@ -13,6 +13,9 @@
 		color: #fff;
 		display: inline-block;
 		position: relative;
+		@media only screen and (max-width: 767px) {
+			font-size: 70px;
+		}
 		span{
 			position: relative;
 			&:before{
@@ -28,6 +31,12 @@
 				transform: translateY(-50%);
 				border-radius: 25px;
 				background:#ebba22;
+
+				@media only screen and (max-width: 767px) {
+					width: 16px;
+					height: 16px;
+					margin-top: 6px;
+				}
 			}
 			&:first-child{
 				&:before{
@@ -46,6 +55,9 @@
 			right: -35px;
 			top: -35px;
 			background: url('../img/dev__top.png') no-repeat center;
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
 		}
 	}
 

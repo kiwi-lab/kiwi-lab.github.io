@@ -1,6 +1,8 @@
 .contact{
 	padding-top: 100px;
 	background: url('../img/contact.jpg') no-repeat center top;
+	padding-bottom: 20px;
+	background-size: cover;
 	.contact__title{
 		font-size: 100px;
 		font-weight: 700;
@@ -8,6 +10,10 @@
 		color: #fff;
 		display: inline-block;
 		position: relative;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 70px;
+		}
 		span{
 			position: relative;
 			&:before{
@@ -23,6 +29,12 @@
 				transform: translateY(-50%);
 				border-radius: 25px;
 				background:#ebba22;
+
+				@media only screen and (max-width: 767px) {
+					width: 16px;
+					height: 16px;
+					margin-top: 6px;
+				}
 			}
 		}
 	}
@@ -33,6 +45,11 @@
 			margin-bottom: 70px;
 			font-size: 48px;
 			line-height: 1.2;
+
+			@media only screen and (max-width: 767px) {
+				font-size: 32px;
+				margin-bottom: 40px;
+			}
 			color: #fff;
 		}
 		.contact__map{
