@@ -1,10 +1,10 @@
 .navbar{
 	background-color: rgba(#100508,.5);
 	border: 0;
-	min-height: 90px;
+	min-height: 70px;
 	border-radius: 0;
 	.navbar-header{
-		height: 100px;
+		height: 70px;
 		.navbar-toggle{
 			float: left;
 			border: 0;
@@ -22,19 +22,19 @@
 			a{
 				text-decoration: none!important;
 				span{
-					border-bottom: 3px solid #ebba22!important;
+					border-bottom: 2px solid #ebba22!important;
 				}
 			}
 		}
 		a{
-			font-size: 30px;
+			font-size: 24px;
 			color: #fff!important;
 			text-decoration: none!important;
 
 			&:hover{
 				text-decoration: underline;
 				span{
-					border-bottom: 3px solid #fff;
+					border-bottom: 2px solid #fff;
 				}
 			}
 		}
@@ -46,28 +46,28 @@
 	}
 	
 	.navbar-nav>li>a{
-		padding: 34px 20px;
+		padding: 25px 20px;
 		@media screen and (max-width: 767px){
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
 
 		@media screen and (min-width: 767px) and (max-width: 991px){
-			font-size: 24px;
-			padding: 40px 10px;
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 	}
 	.embleme{
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding-top: 42px;
+		padding-top: 22px;
 		padding-bottom: 60px;
-		width: 172px;
+		width: 94px;
 		cursor: pointer;
 		&:before{
-			width: 172px;
-			height: 220px;
+			width: 94px;
+			height: 120px;
 			background: url('../img/embleme.png') no-repeat center;
 			display: block;
 			content: '';
@@ -77,22 +77,22 @@
 			position: absolute;
 		}
 		.embleme-text{
-			font-size: 24px;
+			font-size: 15px;
 			position: relative;
 			z-index: 1;
 			color: #fff;
 			width: 100%;
 		}
 		.ico{
-			margin: 16px auto 18px;
-			width: 38px;
-			height: 36px;
+			margin: 8px auto 8px;
+			width: 24px;
+			height: 22px;
 			background: url('../img/messages.png') no-repeat center;
 			background-position: 0 0;
 		}
 		&:hover{
 			.ico{
-				background-position: -50px 0 ;
+				background-position: -30px 0 ;
 			}
 		}
 	}

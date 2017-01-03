@@ -14,8 +14,8 @@
 		}
 		.header-logo{
 			position: relative;
-			padding-top: 320px;
-			padding-bottom: 360px;
+			padding-top: 220px;
+			padding-bottom: 260px;
 			.logo__arrow{
 				user-select: none;
 				position: absolute;
@@ -24,19 +24,19 @@
 				}
 				&-right{
 					top: 90px;
-					width: 652px;
-					height: 364px;
+					width: 500px;
+					height: 279px;
 					background: url('../img/right-arrow.png') no-repeat top center;
 					background-size: 100%;
-					right: -25px;
+					right: 25px;
 				}
 				&-left{
 					bottom: 135px;
-					width: 644px;
-					height: 376px;
+					width: 500px;
+					height: 292px;
 					background: url('../img/left-arrow.png') no-repeat top center;
 					background-size: 100%;
-					left: -40px;					
+					left: 0px;					
 				}
 			}
 		}
