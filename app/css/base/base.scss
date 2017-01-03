@@ -15,6 +15,14 @@ body{
 	font-weight: 400;
 	font-family: 'eurofurence', sans-serif;
 	color: #000;
+	&.modal-open{
+		.feedback{
+			right: -133px;
+		}
+		.navbar{
+			padding-right: 17px;
+		}
+	}
 }
 
 a,

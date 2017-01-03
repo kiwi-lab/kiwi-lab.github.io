@@ -18,4 +18,18 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('.logo__arrow').removeClass('shake-constant--hover shake-slow shake-constant')
 	},3000);
+
+
+	$("[data-scroll-to]").click(function(e) {
+		e.preventDefault();
+		var dataTarget = $(this).data('scrollTo');
+		
+		$('.navbar-nav').find('.active').removeClass('active');
+		$(this).parent().addClass('active');
+
+	    $('html, body').stop().animate({
+	        scrollTop: $(dataTarget).offset().top - 100
+	    }, 800);
+
+	});
 });

@@ -95,6 +95,7 @@
 		&-right{
 			.item__wrapper{
 				.item__text{
+					right: 60px;
 					@media only screen and (max-width: 767px) {
 						right: 0;
 						left: 0;
@@ -106,6 +107,7 @@
 		&-left{
 			.item__wrapper{
 				.item__text{
+					left: 60px;
 					@media only screen and (max-width: 767px) {
 						left: 0;
 						margin: 0 auto;
