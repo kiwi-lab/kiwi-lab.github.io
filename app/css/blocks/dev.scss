@@ -1,11 +1,11 @@
 .dev{
-	background: url('../img/dev.png') no-repeat center top;
-	background-position-y: -45px;
-	@media only screen and (max-width: 1150px) {
+	// background: url('../img/dev.png') no-repeat center top;
+	background: url('../img/dev.jpg') no-repeat center top;
+	// background-position-y: -45px;
+	// @media only screen and (max-width: 1150px) {
 		// background-position-y: 0;
-		background: url('../img/dev.jpg') no-repeat center top;
-		background-color: #000;
-	}
+		// background-color: #000;
+	// }
 	background-size: cover;
 	position: relative;
 	z-index: 1;
