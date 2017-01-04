@@ -28,7 +28,7 @@ $(document).ready(function() {
 		$(this).parent().addClass('active');
 
 	    $('html, body').stop().animate({
-	        scrollTop: $(dataTarget).offset().top - 100
+	        scrollTop: $(dataTarget).offset().top
 	    }, 800);
 
 	});
